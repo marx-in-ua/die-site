@@ -130,7 +130,7 @@ $(function() {
     $(document).ready(function() {
         
         function loading() {
-            $('.result').show().html('Sending...');
+            $('.result').show().html('Надсилання...');
         }
 
         
@@ -148,8 +148,7 @@ $(function() {
                     type: 'POST',
                     data: {
                         email: $('#mailchimp-email').val(),
-                        fname: $('#mailchimp-fname').val(),
-                        lname: $('#mailchimp-lname').val()
+                        name: $('#mailchimp-name').val()
                     },
                     success: function(data) {
                         formResult(data);

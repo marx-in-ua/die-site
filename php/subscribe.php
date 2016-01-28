@@ -4,7 +4,7 @@
 
   $apiKey         = $config['apiKey'];
   $listId         = $config['listId'];
-  $double_optin   = true;
+  $double_optin   = false;
   $send_welcome   = true;
   $email_type     = 'html';
   $email          = $_POST['email'];
@@ -15,13 +15,14 @@
 
   $data = array(
       'email_address'=>$email,
-      'merge_vars' => array('FNAME'=>$fname, 'LNAME'=>$lname),
+      'merge_vars' => array('NAME'=>$name),
       'apikey'=>$apiKey,
       'id' => $listId,
       'double_optin' => $double_optin,
       'send_welcome' => $send_welcome,
       'email_type' => $email_type
   );
+
   $payload = json_encode($data);
    
   $ch = curl_init();
@@ -34,8 +35,8 @@
   curl_close($ch);
   $data = json_decode($result);
 
-  if ($data->error) {
-    echo '<p class="sub-form-error"><i class="fa fa-exclamation-triangle"></i>'.$data->error.'</p>';
-  } else {
-    echo "<p class='sub-form-success'><i class='fa fa-envelope'></i>Дякуємо! Чекайте на новини!</p>";
-  }
+    if ($data->error) {
+        echo '<p class="sub-form-error"><i class="fa fa-exclamation-triangle"></i>'.$data->error.'</p>';
+    } else {
+        echo "<p class='sub-form-success'><i class='fa fa-envelope'></i>Дякуємо! Чекайте на новини!</p>";
+    }
