@@ -9,7 +9,7 @@ $(function() {
         
         $("#status").fadeOut();
         
-        $("#preloader").delay(1000).fadeOut("slow");
+        $("#preloader").delay(700).fadeOut("slow");
     });
 		
 		
@@ -119,7 +119,7 @@ $(function() {
         arrows: false,
         infinite: false,
         autoplay: true,
-        autoplaySpeed: 3000,
+        autoplaySpeed: 5000,
         pauseOnHover: false
     });
 

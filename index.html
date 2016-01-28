@@ -32,7 +32,7 @@
         <li><a href="#Author">Author</a></li>
         <li><a href="#Tweets">Tweets</a></li>
         <li><a href="#Contact">Contact</a></li>
-        <li><a href="#Buy" class="button">Buy Now</a></li>
+        <li><a href="#Subscribe" class="button">Підписатися</a></li>
       </ul>
     </div>
   </div>
@@ -68,7 +68,7 @@
         <!--welcome message end--> 
         
         <!--action button-->
-        <div class="action-button"> <a href="#Features" class="button learn-more text-center">Дізнатися більше <i class="fa fa-arrow-right"></i></a> <a href="#" class="button buy text-center">Підписатися<i class="fa fa-envelope"></i></a>
+        <div class="action-button"> <a href="#Features" class="button learn-more text-center">Дізнатися більше <i class="fa fa-arrow-right"></i></a> <a href="#Subscribe" class="button buy text-center">Підписатися<i class="fa fa-envelope"></i></a>
           <p>* Вже у 2016 році.</p>
         </div>
         <!--action button end--> 
@@ -239,19 +239,16 @@
       <h3>публікації в україномовному перекладі історичного бестселеру</h3>
     </header>
     <div class="row">
-      <div class="slide-bottom col-md-8"> <img src="img/ebook-preview.png" alt="ebook preview" data-no-retina> </div>
-      <div class="col-md-4">
+      <div class="slide-bottom col-md-6"> <img src="img/ebook-preview.png" alt="ebook preview" data-no-retina> </div>
+      <div class="col-md-4 col-md-offset-2">
         <form role="form" id="mc-form" action="php/subscribe.php">
           <div>
-            <input type="text" class="slide-bottom form-control" placeholder="First Name" name="fname" required id="mailchimp-fname">
+            <input type="text" class="slide-bottom form-control" placeholder="Ім’я" name="name" required id="mailchimp-fname">
             <i class="fa fa-user first-name-i"></i></div>
-          <div>
-            <input type="text" class="slide-bottom form-control" placeholder="Last Name" name="lname" required id="mailchimp-lname">
-            <i class="fa fa-user last-name-i"></i></div>
           <div>
             <input type="email" class="slide-bottom form-control" placeholder="Email" required name="email" id="mailchimp-email">
             <i class="fa fa-envelope"></i></div>
-          <button type="submit" class="slide-bottom btn btn-default">Subscribe</button>
+          <button type="submit" class="slide-bottom btn btn-default">Підписатися</button>
         </form>
         <div class="result"></div>
       </div>
@@ -336,17 +333,17 @@
         
         <div class="contact-form">
           <form role="form" action="php/contact-me.php" method="post" id="contact-form">
-            <input type="text" class="slide-bottom form-control" name="name" id="name" placeholder="Your Name" required>
-            <input type="email" class="slide-bottom form-control" name="email" id="email" placeholder="Email Address" required>
-            <textarea class="slide-bottom form-control" name="message" id="message" rows="4" placeholder="Enter Your Message" required></textarea>
+            <input type="text" class="slide-bottom form-control" name="name" id="name" placeholder="Ваше ім’я" required>
+            <input type="email" class="slide-bottom form-control" name="email" id="email" placeholder="Email адреса" required>
+            <textarea class="slide-bottom form-control" name="message" id="message" rows="4" placeholder="Введіть ваше повідомлення" required></textarea>
             <div class="text-center">
-              <button type="submit" class="slide-bottom btn btn-default submit-btn" id="submit-btn" value="Send">Send</button>
+              <button type="submit" class="slide-bottom btn btn-default submit-btn" id="submit-btn" value="Send">Відправити</button>
             </div>
           </form>
           
           <!--contact form end-->
           <div class="success-cf">
-            <p><i class='fa fa-envelope'></i>Thank You! Your message has been sent.</p>
+            <p><i class='fa fa-envelope'></i>Дякуємо! Ваше повідомлення надіслано.</p>
           </div>
           <div class="error-cf">
             <p><i class="fa fa-exclamation-triangle"></i>Something went wrong, try refreshing and submitting the form again.</p>
@@ -411,5 +408,7 @@
 <script src="js/main.js"></script> 
 <!--<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script> 
 <script src="js/gmap.js"></script> -->
+
+<!-- Yandex.Metrika counter --> <script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter34968785 = new Ya.Metrika({ id:34968785, clickmap:true, trackLinks:true, accurateTrackBounce:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/34968785" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
 </body>
 </html>
