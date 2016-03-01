@@ -51,12 +51,12 @@ $(function() {
         }, 2000);
         
         $('.total-number-3').animateNumber({
-            number: 1200, //change value here
+            number: 844, //change value here
             numberStep: comma_separator_number_step
         }, 2000);
         
         $('.total-number-4').animateNumber({
-            number: 1500, //change value here
+            number: 101, //change value here
             numberStep: comma_separator_number_step
         }, 2000);
     
