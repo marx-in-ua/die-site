@@ -9,7 +9,7 @@ $(function() {
         
         $("#status").fadeOut();
         
-        $("#preloader").delay(700).fadeOut("slow");
+        $("#preloader").delay(500).fadeOut("slow");
     });
 		
 		
@@ -51,12 +51,12 @@ $(function() {
         }, 2000);
         
         $('.total-number-3').animateNumber({
-            number: 844, //change value here
+            number: 1560, //change value here
             numberStep: comma_separator_number_step
         }, 2000);
         
         $('.total-number-4').animateNumber({
-            number: 101, //change value here
+            number: 210, //change value here
             numberStep: comma_separator_number_step
         }, 2000);
     
