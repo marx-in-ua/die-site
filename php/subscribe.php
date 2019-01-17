@@ -18,7 +18,7 @@ $data = [
     'email_address' => $email,
     'status' => 'subscribed',
     'email_type' => $email_type,
-    'merge_vars' => ['NAME'=>$name]
+    'merge_fields' => ['NAME'=>$name]
 ];
 
 $payload = json_encode($data);
