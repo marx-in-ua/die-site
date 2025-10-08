@@ -21,6 +21,12 @@
 <link href="css/styles.min.css" rel="stylesheet">
 <link href="css/main.css" rel="stylesheet">
 </head>
+<style>  
+  .button.cta {
+    background: #2ecc71;
+    border: 1px solid #2ecc71;
+  }
+</style>
 <body>
 
 <!--nav-->
@@ -50,7 +56,7 @@
 <!--nav end--> 
 
 <!--Hero section-->
-<section class="hero" data-0="background-position:0px 0px;" data-500="background-position:0px -250px;" id="Home">
+<section class="hero"  id="Home">
   <div class="overlay"></div>
   <div class="container">
     <div class="row">
@@ -62,15 +68,16 @@
         </div>
       </div>
     </div>
-    <div class="row" data-0="opacity: 1" data-800="opacity: 0">
-      <div class="col-md-5 text-center"> <img src="img/ebook.png" alt="ebook" class="book-cover" data-no-retina> </div>
+    <div class="row">
+      <div class="col-md-5 text-center"> <img src="img/ebook.png" alt="ebook" class="book-cover" data-no-retina height="645" width="544"> </div>
       <div class="col-md-7"> 
         <!--welcome message-->
         <header class="welcome-message">
-          <h1>Марксів <br>«Капітал» <small>(3 томи)</small><br> українською</h1>
+          <h1>Марксів <br>«Капітал» <br> українською</h1>
           <h1><small></small></h1>
-         
-          <h2>Cпільна підготовка видання. Три томи <strong>вперше</strong> в українському перекладі з оригіналів німецьких видань.
+          <h2><strong>Вперше повний переклад з оригіналу</strong></h2>
+          <h2>
+            Долучайтеся до історичного проєкту — підтримайте видання та отримайте книгу серед перших!
           </h2>
         </header>
         <!--welcome message end--> 
@@ -78,10 +85,11 @@
         <!--action button-->
         <div class="action-button"> 
 
-          <a href="#Subscribe" class="button learn-more text-center">Придбати <i class="fa fa-shopping-cart"></i></a>
-          <a href="https://www.facebook.com/marx.in.ua/" target="_blank" class="button buy text-center">
+          <a href="#Subscribe" class="button cta learn-more text-center">
+            Передзамовити зараз <i class="fa fa-shopping-cart"></i></a>
+         <!-- <a href="https://www.facebook.com/marx.in.ua/" target="_blank" class="button buy text-center">
             Долучитися<i class="fa fa-facebook-square"></i></a>
-          <!--<p>* доступна послуга передзамовлення</p>-->
+          <p>* доступна послуга передзамовлення</p>-->
         </div>
         <!--action button end--> 
         
@@ -91,6 +99,34 @@
   </div>
 </section>
 <!--Hero section end--> 
+
+<!--sub form-->
+<section class="sub-form section-spacing text-center" id="Subscribe">
+  <div class="container">
+    <header style="max-width: 50em; margin: auto;">
+      <h2>Будьте серед перших, хто отримає «Капітал»&nbsp;українською!</h2>
+      <h3>
+        Залиште свою електронну пошту, і ми повідомимо вас 
+        про старт продажів та ексклюзивні умови для передзамовників<sup>*</sup>.</h3>
+    </header>
+    <div class="row">
+      <div class="slide-bottom col-md-6"> <img src="img/ebook-preview.png" alt="ebook preview" data-no-retina> </div>
+      <div class="col-md-4 col-md-offset-2">
+        <form role="form" id="mc-form" action="php/subscribe.php">
+          <div>
+            <input type="text" class="slide-bottom form-control" placeholder="Ім’я" name="name" required id="mailchimp-name">
+            <i class="fa fa-user first-name-i"></i></div>
+          <div>
+            <input type="email" class="slide-bottom form-control" placeholder="Email" required name="email" id="mailchimp-email">
+            <i class="fa fa-envelope"></i></div>
+          <button type="submit" class="slide-bottom button cta">Передзамовлення</button>
+          <p><br /><small><sup>*</sup> Вже 500+ людей чекають на книгу</small></p>
+        </form>
+        <div class="result"></div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <!--features-->
 <section class="features section-spacing text-center" id="Features">
@@ -245,46 +281,24 @@
 
 <!--reviews end--> 
 
-<!--sub form-->
-<section class="sub-form section-spacing text-center" id="Subscribe">
-  <div class="container">
-    <header>
-      <h2>Хочу першим дізнаватися новини</h2>
-      <h3>Як тільки книга надійде в продаж, ми надішлемо Вам листа!</h3>
-    </header>
-    <div class="row">
-      <div class="slide-bottom col-md-6"> <img src="img/ebook-preview.png" alt="ebook preview" data-no-retina> </div>
-      <div class="col-md-4 col-md-offset-2">
-        <form role="form" id="mc-form" action="php/subscribe.php">
-          <div>
-            <input type="text" class="slide-bottom form-control" placeholder="Ім’я" name="name" required id="mailchimp-name">
-            <i class="fa fa-user first-name-i"></i></div>
-          <div>
-            <input type="email" class="slide-bottom form-control" placeholder="Email" required name="email" id="mailchimp-email">
-            <i class="fa fa-envelope"></i></div>
-          <button type="submit" class="slide-bottom btn btn-default">Передзамовлення</button>
-        </form>
-        <div class="result"></div>
-      </div>
-    </div>
-  </div>
-</section>
+
+
 <!--sub form--> 
 
 <!--PRICES social-->
 
-<section class="prices text-center section-spacing" id="Social">
-  <div class="container">
-    <header>
-      <h2>Слідкуйте за новинами в соціальних мережах</h2>
-    </header>
-    <div class="row">
-      <div class="col-md-6 col-md-offset-3"> 
-        <div class="fb-page" data-href="https://www.facebook.com/marx.in.ua/" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-width="500" data-hide-cover="false" data-show-facepile="true"><div class="fb-xfbml-parse-ignore" style="margin: 0 auto;"><blockquote cite="https://www.facebook.com/marx.in.ua/"><a href="https://www.facebook.com/marx.in.ua/">Марксів «Капітал» українською</a></blockquote></div></div>
-      </div>
-    </div>
-  </div>
-</section>
+<!--<section class="prices text-center section-spacing" id="Social">-->
+<!--  <div class="container">-->
+<!--    <header>-->
+<!--      <h2>Слідкуйте за новинами в соціальних мережах</h2>-->
+<!--    </header>-->
+<!--    <div class="row">-->
+<!--      <div class="col-md-6 col-md-offset-3"> -->
+<!--        <div class="fb-page" data-href="https://www.facebook.com/marx.in.ua/" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-width="500" data-hide-cover="false" data-show-facepile="true"><div class="fb-xfbml-parse-ignore" style="margin: 0 auto;"><blockquote cite="https://www.facebook.com/marx.in.ua/"><a href="https://www.facebook.com/marx.in.ua/">Марксів «Капітал» українською</a></blockquote></div></div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</section>-->
 
 <!--PRICES END--> 
 
@@ -427,9 +441,9 @@
 <!--site-footer end--> 
 
 <!--PRELOAD-->
-<div id="preloader">
-  <div id="status"></div>
-</div>
+<!--<div id="preloader">-->
+<!--  <div id="status"></div>-->
+<!--</div>-->
 <!--end PRELOAD--> 
 
 <script src="js/scripts.min.js"></script> 
@@ -444,7 +458,6 @@
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 
-<!--<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script> 
-<script src="js/gmap.js"></script> -->
+<script src="https://cdn.counter.dev/script.js" data-id="a3bfb50d-6a82-4c40-aab9-9a2527614c81" data-utcoffset="3"></script>
 </body>
 </html>
